@@ -30,6 +30,6 @@ namespace WebApplication_Ragnarok
 
             app.Run();
             //hej
-        }
+        }   //oralausen
     }
 }
