@@ -29,7 +29,6 @@ namespace WebApplication_Ragnarok
             app.MapRazorPages();
 
             app.Run();
-            //hej
-        }   //oralausen
+        }
     }
-}
+}           //hej emre 
