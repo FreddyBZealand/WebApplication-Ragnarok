@@ -1,6 +1,25 @@
 ﻿@page
 @model WebApplication_Ragnarok.Pages.GasolinModel
 @{
+	ViewData["Title"] = "Gasolin' - Danmarks største rockband";
 
+    <div class="container">
+        <header>
+            <h1>Gasolin'</h1>
+            <p>Danmarks største rockband</p>
+        </header>
+
+        <img src="~/images/gasolin.jpg" alt="Gasolin band" class="band-image" />
+
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Kim Larsen" })">Kim Larsen</a></li>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Franz Beckerlee" })">Franz Beckerlee</a></li>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Wili Jønsson" })">Wili Jønsson</a></li>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Søren Berlev" })">Søren Berlev</a></li>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Bjørn Uglebjerg" })">Bjørn Uglebjerg</a></li>
+            </ul>
+        </nav>
+    </div>
 }
 
