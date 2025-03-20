@@ -1,18 +1,19 @@
 ﻿@page
 @model WebApplication_Ragnarok.Pages.GasolinModel
 @{
-	ViewData["Title"] = "Gasolin' - Danmarks mest betydningsfulde rockband";
-
     <div class="container">
         <header>
             <h1>Gasolin'</h1>
-            <p>Danmarks mest betydningsfulde rockband</p>
+            <p>Danmarks mest betydningsfulde rockband. 
+            Gasolin’ var et dansk rockband, der var aktivt fra 1969 til 1978. Bandet bestod af Kim Larsen, Franz Beckerlee, Wili Jønsson, Søren Berlev og Bjørn Uglebjerg. De var et af Danmarks mest populære rockbands og er kendt for hits som Rabalderstræde, Kvinde Min og Langebro. Deres musik kombinerede rock, folk og pop med danske tekster, der ofte afspejlede samfundet og hverdagen.
+            </p>
         </header>
 
         <img src="~/images/gasolin.jpg" alt="Gasolin band" class="band-image" />
 
         <nav>
             <ul>
+                <li><a href="@Url.Action("BandMember", "Home", new { name = "Tryk her for flere oplysninger om Gasolin" })">Gasolin</a></li>
                 <li><a href="@Url.Action("BandMember", "Home", new { name = "Kim Larsen" })">Kim Larsen</a></li>
                 <li><a href="@Url.Action("BandMember", "Home", new { name = "Franz Beckerlee" })">Franz Beckerlee</a></li>
                 <li><a href="@Url.Action("BandMember", "Home", new { name = "Wili Jønsson" })">Wili Jønsson</a></li>
