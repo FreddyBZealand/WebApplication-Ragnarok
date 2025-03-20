@@ -1,10 +1,28 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Gasolin' - Forside";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <h1>Velkommen til udstillingen</h1>
+    <p>Oplev historien om Danmarks største rockband.</p>
+
+    <!-- Billede af Gasolin' -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Gasolin_band.jpg" alt="Gasolin Band" class="band-image">
+
+    <!-- Navigationslinks -->
+    <h2>Mød medlemmerne</h2>
+    <ul class="band-links">
+        <li><a asp-page="/KimLarsen">Kim Larsen</a></li>
+        <li><a asp-page="/FranzBeckerlee">Franz Beckerlee</a></li>
+        <li><a asp-page="/WiliJønsson">Wili Jønsson</a></li>
+        <li><a asp-page="/SørenBerlev">Søren Berlev</a></li>
+        <li><a asp-page="/Bjørn Uglebjerg">Bjørn Uglebjerg</a></li>
+        
+    </ul>
+
+    <!-- Link til Tidslinje -->
+    <a class="btn" asp-page="/Timeline">Se Gasolins Historie</a>
 </div>
+
