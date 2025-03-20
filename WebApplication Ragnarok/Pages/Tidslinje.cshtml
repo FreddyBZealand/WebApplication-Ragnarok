@@ -1,0 +1,35 @@
+﻿@page
+@model WebApplication_Ragnarok.Pages.TimelineModel
+@{
+    ViewData["Title"] = "Gasolin' Tidslinje";
+}
+
+<div class="container">
+    <h1>Gasolin' Tidslinje</h1>
+    <p>Her kan du se en oversigt over Gasolins historie.</p>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="year">1969</div>
+            <div class="event">Gasolin' bliver dannet i København af Kim Larsen, Franz Beckerlee og Wili Jønsson.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="year">1971</div>
+            <div class="event">Debutalbummet "Gasolin’" udkommer.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="year">1973</div>
+            <div class="event">Gennembrud med albummet "Gasolin’ 3" og sangen "Langebro".</div>
+        </div>
+        <div class="timeline-item">
+            <div class="year">1976</div>
+            <div class="event">De prøver at slå igennem internationalt med en engelsk plade, men det lykkes ikke.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="year">1978</div>
+            <div class="event">Gasolin’ spiller deres sidste koncert og går i opløsning.</div>
+        </div>
+    </div>
+
+    <a class="btn" asp-page="Index">Tilbage til forsiden</a>
+</div>
